@@ -4,9 +4,24 @@
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@eslint/js": "^10.0.1",
+    "@types/bun": "latest",
+    "eslint": "^10.15.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.10.1"
   },
   "peerDependencies": {
     "typescript": "^7"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0"
+  },
+  "scripts": {
+    "start": "bun server.js",
+    "dev": "bun --watch server.js",
+    "test": "bun test",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   }
 }
